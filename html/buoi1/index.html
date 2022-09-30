@@ -1,0 +1,147 @@
+<!-- comment: ghi chú -->
+<!-- tất cả các file đều gọi là document -->
+<!-- web chạy trên nền tảng là gì? 
+    web nó có env runtime là gì: browser: trình duyệt-->
+<!-- document mà để browser hiểu là web thì phải khai bảo
+rằng tui được viết bằng html5-->
+<!-- html là gì: Hypertext Markup Language
+    ngôn ngữ đánh dấu siêu văn bản
+    html không phải ngôn ngữ lập trình
+
+    trong html các phần tử đều phân theo tag/thẻ
+    -> trong html tất cả đều là thẻ/tag
+    1 tag có hình dạng như thế nào?
+    <tagName attribute> content </tagName>
+    thẻ mở   thuộc tính         thẻ đóng
+-->
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buổi 1</title>
+    </head>
+    <body>
+        <a href="#chapter1">Nhấp vào tui, tui sẽ dắt bạn xuống Chapter 1</a>
+        <!-- bộ heading
+        heading là gì? Là mấy cái tiêu đều, mấy cái title
+        của một đoạn văn
+            khi mà tui muốn có 1 title tui dùng bộ heading
+
+    -->
+    <!-- bộ heading có 6 thẻ
+        h1, h2, h3, h4, h5, h6
+    -->
+        <h1>Anh Điệp đẹp trai h1</h1>
+            <h2>Anh Điệp đẹp trai h2</h2>
+                <h3>Anh Điệp đẹp trai h3</h3>
+                    <h4>Anh Điệp đẹp trai h3</h4>
+                        <h5>Anh Điệp đẹp trai h3</h5>
+                            <h6>Anh Điệp đẹp trai h3</h6>
+    <!-- số càng lớn thì càng nhỏ, nhưng vẫn in đậm
+        h7 thì không có
+        block: là những thẻ có khối bao content và chiếm trọng 
+        hàng, không cho tag khác lên cùng
+
+        inline-block: vẫn là block, nhưng chỉ bao gọn content
+        không chiếm hàng
+    -->
+    <!-- p: paragraphs: đoạn văn -->
+    <p>
+        hello &ensp;&ensp;&ensp; xin chào <br />
+        các bạn tôi tên là Điệp đẹp trai
+    </p>
+    <!-- <br /> breakline: xuống hàng -->
+    <!-- tag p là block -->
+    <!-- hầu hết các thẻ đều có style 
+    => tất cả đều có thẻ trang điểm được
+        text-align: Left/right/center/inherit
+        căn giữa
+    -->
+    <p style="text-align: right; 
+    color: blueviolet;
+    font-weight: 700;">
+        Xin chào mọi người
+    </p>
+
+    <p style="display: inline-block
+    ;text-align: right; 
+    color: blueviolet;
+    font-weight: 700;">
+        Xin chào mọi người miình là inline-block
+    </p>
+
+    <!-- text-align có căn lề theo cái gì
+    text-align có references là gì?
+    text-align căn hàng theo block(content) của tag
+    -->
+
+    <!-- bộ formating: bộ tượng hình -->
+    <p>
+        <em>xin chào</em> <small>các</small>
+        bạn <del>tao</del> tôi <strong>tên</strong> là <mark>Điệp đẹp trai</mark></p>
+    <!-- i: italic: nghiêng | em: emsphasized: nhấn mạnh -->
+    <!-- b: bold: đậm | strong: mạnh -->
+    <!-- sub/sup -->
+    <p>H<sub>2</sub>O: nước</p>
+    <p>Ax<sup>2</sup> + Bx + C = 0</p>
+    <!-- tag formating đều là inline
+    inline là: tag chỉ có content, không có khối
+    -->
+    <!-- ngoài thẻ p ra ta có thể dùng 1 thể nữa
+    tên là pre preformated
+    là thẻ p nhưng có font chữ khác, và cho tự do 
+    không nên dùng ẩu vì có thể bị hiệu ứng hở sườn(kéo ngang được)
+    -->
+    <pre>
+        hel
+                    lo
+    </pre>
+
+    <!-- pseudo Tag: bộ thẻ giả
+    thẻ giả: là thẻ không có chức năng gì hết
+    thẻ trắng: thẻ không có gì hết
+        span: display: inline
+        div: display: block
+    -->
+    <p><span style="font-size: xx-large">x</span>in chào</p>
+    <!-- bài tập 1 | bài tập 2 -->
+    <!-- tag a: hyperlinks -->
+    <a href="https://www.google.com/"
+    target="_blank">click vào tui,
+        tui sẽ dắt bạn đi google</a>
+    <!-- hyperlink references -->
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <h1 id="chapter1">Chapter 1</h1>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    </body>
+</html>

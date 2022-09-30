@@ -1,0 +1,6 @@
+Không dc DOM trực tiếp vào btn-remove
+vì nó được tạo ra dựa trên JS chứ k phải HTML
+nên mình phải DOM vào tbody or DOM vào nơi 
+thuộc sở hữu của HTML
+
+

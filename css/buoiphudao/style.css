@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* demo flex */
+.demo_cha{
+    border: 1px solid red;
+    display: flex;
+}
+.demo_con1{
+    border: 1px solid blue;
+}
+.demo_con2{
+    border: 1px solid green;
+}
+/* menu */
+.nav-bg{
+    border: 1px solid red;
+}
+.container{
+    border: 1px solid aquamarine;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0 0.5rem;
+}
+.nav{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+.nav-logo{
+    border: 1px solid rebeccapurple;
+}
+.nav-logo a{
+    color: aqua;
+    font-weight: 700;
+    font-size: 2.4rem;
+    white-space: 2px;
+    text-decoration: none;
+}
+.nav-logo a span{
+    color: red;
+}
+.nav-menu{
+    border: 1px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+}
+.nav-menu__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav-menu__item{
+    padding: 0 2rem;
+}
+.nav-menu__link{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-menu__link:hover{
+    color: red;
+}
+.btn-contact{
+    border: none;
+    outline: none;
+    background-color: red;
+    padding: 1rem 2rem;
+    border-radius: 23px;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.btn-contact:hover{
+    background-color: aqua;
+}
+.btn-toggle-menu{
+    display: block;
+}
+@media(max-width: 880px){
+    .btn-contact{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav-menu__item{
+        padding: 0 1.2rem;
+    }
+}
+@media(max-width: 675px){
+    .btn-toggle-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        z-index: 9999;
+        opacity: 0;
+    }
+    .nav{
+        position: relative;
+        justify-content: flex-start;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        background-color: antiquewhite;
+        left: 50%;
+        transform: translate(-50%, 0); 
+        height: 300%;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .nav-menu__list{
+        display: block;
+    }
+    .nav-menu{
+        padding: 0 0;
+    }
+    .nav-menu__link{
+        height: 5rem;
+        width: 35rem;
+        border-bottom: 1px solid gainsboro;
+        display: flex;
+    }
+    .btn-toggle-menu:checked ~ .nav-menu{
+        height: 300%;
+        opacity: 1;
+    }
+
+    .btn-toggle-icon{
+        position: absolute;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+    }
+    .btn-toggle-icon span{
+        display: block;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .btn-toggle-icon span::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 80%;
+        transition: 0.3s;
+    }
+    .btn-toggle-icon span::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 80%;
+        transition: 0.3s;
+    }
+    .btn-toggle-menu:checked ~ .btn-toggle-icon::before{
+        top: 50%;
+        transform: translate(-13%, -50%) rotate(45deg);
+        width: 140%;
+    }
+    .btn-toggle-menu:checked ~ .btn-toggle-icon::after{
+        top: 50%;
+        transform: translate(-13%, -50%) rotate(-45deg);
+        width: 140%;
+    }
+    .btn-toggle-menu:checked ~ .btn-toggle-icon span{
+        width: 0;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 2</title>
+    <style>
+        /* select tag name: chọn đối tượng bằng tên thẻ */
+        p{
+            color: red;
+        }
+        /* select thằng thứ x từ trên xuống */
+        p:nth-child(3){
+            color: blue;
+        }
+        /* select class name: chọn đối tượng bằng class name
+        tạo ra 1 class chứa các thuộc tính
+        tag nào có class đó sẽ có thuôc tính của nó
+        trong css ta dùng dấu . để truy cập*/
+        .dacbiet{
+            color: pink !important;
+        }
+        .dacbiet2{
+            font-size: 30px;
+        }
+        /* select bằng id: giống select bằng class
+        nhưng thay vì dùng . thì nó dùng #
+        1 doc html không có 2 tag trùng id với nhau*/
+    </style>
+</head>
+<body>
+    <!-- học qua những thẻ vô dụng -->
+    <!-- Quatations -->
+    <p class="dacbiet">có một người từng nói rằng "một cây làm chẳng nên non
+        3 cây chụm lại vẫn là 3 cây"</p>
+    <p class="dacbiet dacbiet2">một cây làm chẳng nên non 3 cây chụm lại vẫn là 3 cây</p>
+    <q>một cây làm chẳng nên non 3 cây chụm lại vẫn là 3 cây</q>
+    <!-- q: quote dùng để trcih1 dẫn(không cần thêm dấu "")
+        q có display: inline
+    -->
+    <!-- blockquote: -->
+    <!-- abbr -->
+    <p>Công chúa thuộc về người <abbr style="text-decoration: underline solid" title="Lê Thái Khoa">đẹp trai nhất</abbr></p>
+    <!--address: p + em + block bỏ model block -->
+    <address>115/13 Đường Đình Phong Phú</address>
+    <!-- Cite -->
+    <p><cite>Tác phẩm này đợc vẽ bởi</cite> Vì Em Vẫn Good</p>
+    <!-- bdo -->
+    <bdo dir="rtl">Xin chào ngày mới</bdo>
+
+    <div style="height: 100vh"></div>
+</body>
+</html>
+<!--
+    color: đổi màu chữ
+    background-color: đổi màu nền
+
+-->

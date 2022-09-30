@@ -1,0 +1,18 @@
+.demo-tbl,
+.demo-tbl td{
+    border: 1px solid skyblue;
+    border-collapse: collapse;
+}
+.demo-tbl{
+    width: 100%;
+}
+.side-left{
+    width: 30%;
+}
+.side-right{
+    width: 70%;
+}
+.fieldset{
+    text-align: center;
+    border: 2px solid red;   
+}

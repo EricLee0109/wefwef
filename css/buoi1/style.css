@@ -1,0 +1,68 @@
+/* reset css */
+/* border-box: gộp border vào lun */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html{
+    font-size: 62.5%; /* có thể dãn dc */
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* unit size 
+    đơn vị đo: px/mm/cm
+    %: ăn theo cha nó
+    em: coi theo font-size của cha là 1 đơn vị
+    rem: coi theo font-size của html là 1 đơn vị
+*/
+
+/* outline */
+.demo-ipt{
+    margin: 3rem; /* khoảng cách từ border ra margin*/
+    border: 1px solid red;
+    outline: 1px solid blue;
+    outline-offset: 2rem;
+    /* khoảng cách từ border ra outline */
+}
+.demo-border{
+    border: 5px solid teal;
+    border-top: 5px solid teal;
+    border-left: 5px solid rebeccapurple;
+    border-right: 5px solid rosybrown;
+    border-bottom: 5px solid skyblue;
+    border-radius: 0.5rem;
+}
+.circle{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0.5rem solid black;
+    border-radius: 50%;
+}
+/* https://bennettfeely.com/ */
+
+.demo-text{
+    color: teal;
+    background-color: tomato;
+    font-size: 2rem;
+    text-decoration: underline solid chartreuse;
+    /* text-decoration: where style color;
+    where: overline | line-through | underline
+    style: solid | doshed | dotted 
+    */
+    text-indent: 2rem;
+    /* text-indent: 
+        Thụt đầu dòng 
+    */
+    /* letter-spacing: 2rem; */ /* khoảng cách chữ cách nhau */
+    /* word-spacing: 2rem; */ /* khoảng cách từ cách nhau*/
+    line-height: 3rem; /* khoảng cách dòng */
+    text-shadow: 1px 3px 1px red;
+    box-shadow: 2px 2px 6px 6px blue;
+}
+.demo-text span{
+    vertical-align: sub; /* căn dọc: sub| supper */
+}

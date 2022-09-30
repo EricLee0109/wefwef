@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <h1 style="text-align: center;
+                    color: skyblue;">Đăng ký du lịch</h1>
+        <table class="demo-tbl">
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="username">Họ và tên</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <input id="username"
+                        name="user"
+                        type="text"
+                        value="Phạm Ngọc Cẩm Đào">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="address">Địa chỉ</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <input type="text" 
+                        name="user"
+                        id="address"
+                        value="227 Nguyễn Văn Cừ">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="phone">Điện thoại</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <input type="text" 
+                        name="user"
+                        id="phone"
+                        value="8351056">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="customer">Khách hàng</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <input type="checkbox" 
+                        name="user" 
+                        id="customer">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="tour">Chọn tour</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <select name="user" id="tour">
+                            <option value="kontum">
+                                Buôn mê thuột - Gia Lai - Kon Tum
+                            </option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="transport">Phương tiện</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <label for="plane">Máy bay</label>
+                        <input type="radio" 
+                        name="transport" 
+                        id="plane"
+                        value="Máy bay">
+                        <label for="oto">Xe Ô tô</label>
+                        <input type="radio" 
+                        name="transport" 
+                        id="oto">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="side-left">
+                    <div>
+                        <fieldset class="fieldset">
+                            <legend style="text-align: center;">
+                            Số lượng đoàn khách</legend>
+                            <label for="adult">Người lớn</label>
+                            <input type="text" name="user" id="adult">
+                            <label for="child">Trẻ em</label>
+                            <input type="text" name="user" id="child">
+                        </fieldset>
+                    </div>
+                </td>
+                <!-- <td class="side-right">14</td> -->
+            </tr>
+            <tr>
+                <td class="side-left">
+                    <div>
+                        <label for="ghichu">Ghi chú thêm</label>
+                    </div>
+                </td>
+                <td class="side-right">
+                    <div>
+                        <textarea name="note" 
+                        id="ghichu" 
+                        cols="30" rows="10"
+                        style="max-width: 300px; max-height: 300px;">
+                    </textarea>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="side-left">
+                    <div>
+                        <button>Đồng ý</button>
+                    </div>
+                </td>
+                <!-- <td class="side-right">18</td> -->
+            </tr>
+            <tr>
+                <td colspan="2" class="side-left">
+                    <label>Bạn đã đăng ký thành công</label>
+                </td>
+                <!-- <td class="side-right">20</td> -->
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

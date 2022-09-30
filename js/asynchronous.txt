@@ -1,0 +1,3 @@
+JS là đơn luồng
+nhưng khi nó chạy với web
+thì nó là đa luồng

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+
+nav-bg{
+    border: 1px solid red;
+}
+nav{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}

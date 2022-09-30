@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title PiedTeam
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  body
+    include ./layout/header.pug
+    include ./layout/design.pug
+    include ./layout/wwcd.pug
+    include ./layout/portfolio.pug
+    include ./layout/about.pug
+    include ./layout/map.pug
+    include ./layout/footer.pug
+    //- img(src="./../img/bg-login.jpg", alt="", srcset="")
+    noscript  PiedTeam
+    script(src='../bundle.js')
